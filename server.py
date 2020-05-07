@@ -20,4 +20,9 @@ if __name__ == '__main__':
 #In Python 2.7 run command line:
 #python -m SimpleHTTPServer 8000
 
+#http.server only exists in Python 3
+#In python 2, You should use he BaseHTTPServer module:
+#   from BaseHTTPServer import BaseHTTPRequestHandler
+#link: https://stackoverflow.com/questions/24444343/no-module-named-http-server
+
 #then type python server.py
