@@ -3,5 +3,6 @@ from . import views
 
 urlpatterns = [
     path('', views.home),
-    path('data', views.data),
+    path('twitter/', views.twitter),
+    path('about/', views.about)
 ]

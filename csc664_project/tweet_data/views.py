@@ -6,8 +6,11 @@ from django.http import HttpResponse
 def home(request):
     return render(request, 'tweet_data/index.html')
 
-def data(request):
-    return HttpResponse('Twitter data yerr')
+def twitter(request):
+    return render(request, 'tweet_data/twitter.html')
+
+def about(request):
+    return render(request, 'tweet_data/about.html')
 
 # File Structure on how it renders:
 # tweet_data --> templates --> tweet_data --> .html 
